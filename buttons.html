@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blox - CSS Library</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a id="home-link" href="index.html">Blox</a>
+
+      <button id="menu-button">
+        <img id="menu-button" src="/assets/ic_menu.svg" />
+      </button>
+
+      <ul class="menu-items">
+        <li><a href="buttons.html">Buttons</a></li>
+        <li><a href="cards.html">Cards</a></li>
+        <li><a href="navbars.html">Navbars</a></li>
+        <li>
+          <button id="dark-toggle">
+            <img id="dark-toggle-img" src="/assets/ic_dark.svg" />
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <h1>Button Components</h1>
+      <section>
+        <h2>Solid Variants</h2>
+        <div class="component-grid">
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-primary">Primary</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-primary"&gt;
+  Primary
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-secondary">Secondary</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-secondary"&gt;
+  Secondary
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-success">Success</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-success"&gt;
+  Success
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button data-key="btn btn-success" class="copy-btn">Copy</button>
+            </div>
+          </div>
+
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-error">Error</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-error"&gt;
+  Error
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-warning">Warning</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-warning"&gt;
+  Warning
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-info">Info</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-info"&gt;
+  Info
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-light">Light</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-light"&gt;
+  Light
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-dark">Dark</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-dark"&gt;
+  Dark
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-link">Link</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-link"&gt;
+  Link
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Outline Variants</h2>
+        <div class="component-grid">
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-outline-primary">Primary</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-outline-primary"&gt;
+  Primary
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-outline-secondary">Secondary</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-outline-secondary"&gt;
+  Secondary
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-outline-success">Success</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-success"&gt;
+  Success
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Size Variants</h2>
+        <div class="component-grid">
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-primary btn-lg">Large</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-primary btn-lg"&gt;
+  Large
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+
+          <div class="component-box">
+            <div class="preview">
+              <button class="btn btn-primary btn-sm">Small</button>
+            </div>
+            <pre><code class="language-html">&lt;button class="btn btn-primary btn-sm"&gt;
+  Small
+&lt;/button&gt;</code></pre>
+            <div class="copy-container">
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

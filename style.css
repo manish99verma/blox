@@ -1,0 +1,405 @@
+:root {
+  --color-background: #fff;
+  --color-foreground: #000;
+  --color-accent: #00c687;
+  --color-box-bg: #eee;
+  --color-border: #ccc;
+}
+
+.dark-mode {
+  --color-background: #000;
+  --color-foreground: #fff;
+  --color-accent: #007550;
+  --color-box-bg: #111;
+  --color-border: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-foreground);
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover,
+a:active {
+  opacity: 60%;
+}
+
+main {
+  padding: 12px 5%;
+}
+
+code {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  padding: 10px 0px;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  border-radius: 8px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  justify-items: center;
+  align-items: end;
+  justify-content: center;
+  gap: 2%;
+  background-color: var(--color-accent);
+  padding: 12px 5%;
+  position: relative;
+}
+
+.navbar #home-link {
+  position: absolute;
+  top: 16px;
+  left: 5%;
+  font-weight: 600;
+  font-size: large;
+}
+
+.navbar .menu-items {
+  display: none;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  list-style-type: none;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+}
+
+.navbar #dark-toggle,
+#menu-button {
+  width: 26px;
+  height: 26px;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  background: none;
+  color: var(--color-foreground);
+}
+
+/* Grid layout */
+.component-grid {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
+}
+
+.component-box {
+  border: 1px solid var(--color-border);
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--color-box-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+}
+
+.copy-container {
+  display: flex;
+  justify-content: end;
+}
+
+.component-box .copy-btn {
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  background: none;
+  border-radius: 8px;
+  font-size: medium;
+  font-weight: 500;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+/* Button styles */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+button:active {
+  opacity: 60%;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background-color: #0073ef;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6d7983;
+  color: white;
+}
+
+.btn-success {
+  background-color: #189259;
+  color: white;
+}
+
+.btn-error {
+  background-color: #dc3142;
+  color: white;
+}
+
+.btn-warning {
+  background-color: #f6ba06;
+  color: black;
+}
+
+.btn-info {
+  background-color: #08c5eb;
+  color: black;
+}
+
+.btn-light {
+  background-color: #f0f3f7;
+  color: black;
+}
+
+.btn-dark {
+  background-color: #24272b;
+  color: white;
+}
+
+.btn-link {
+  color: #1371ff;
+  text-decoration: underline dashed 2px;
+  text-underline-offset: 4px;
+  background: none;
+}
+
+.btn-outline-primary {
+  border: 2px solid #0073ef;
+  color: #0073ef;
+  background: none;
+}
+
+.btn-outline-secondary {
+  border: 2px solid #6d7983;
+  color: #6d7983;
+  background: none;
+}
+
+.btn-outline-success {
+  border: 2px solid #189259;
+  color: #189259;
+  background: none;
+}
+
+.btn-lg {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+.btn-sm {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* Card Components */
+.component-title {
+  text-align: center;
+}
+
+.card {
+  border: 2px solid rgba(99, 99, 99, 0.3);
+  box-shadow: 2px 2px 5px rgba(35, 35, 35, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  gap: 8px;
+  width: 100%;
+}
+
+.card .card-title {
+  font-size: larger;
+  font-weight: 600;
+  letter-spacing: 5%;
+}
+
+.card .card-text {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 3%;
+}
+
+.card .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  border: 2px solid rgba(99, 99, 99, 0.3);
+}
+
+.card-profile {
+  align-items: center;
+}
+
+.card-profile .card-img-top {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.card-profile .img-sm {
+  width: 120px;
+  height: 120px;
+}
+
+.card-action-button-container {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.card .card-header {
+  margin-top: -16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgba(99, 99, 99, 0.8);
+  padding: 4px 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.card .card-footer {
+  margin-bottom: -16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: rgba(99, 99, 99, 0.8);
+  padding: 4px 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.card-img-selector {
+  align-items: center;
+  gap: 16px;
+}
+
+.card-img-selector .selector-button {
+  border: none;
+  width: 100%;
+  background: none;
+}
+
+.card-img-selector .card-placeholder-img {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+  .navbar .menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  .navbar #menu-button {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: row;
+    padding: 12px 15%;
+  }
+}
+
+@media (min-width: 768px) {
+  .component-grid {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+
+  .navbar {
+    padding: 12px 10%;
+  }
+
+  .navbar #home-link {
+    left: 10%;
+  }
+
+  main {
+    padding: 12px 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .component-grid {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
+
+  .navbar {
+    padding: 12px 15%;
+  }
+
+  .navbar #home-link {
+    left: 15%;
+  }
+
+  main {
+    padding: 12px 15%;
+  }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blox - CSS Library</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a id="home-link" href="index.html">Blox</a>
+
+      <button id="menu-button">
+        <img id="menu-button" src="/assets/ic_menu.svg" />
+      </button>
+
+      <ul class="menu-items">
+        <li><a href="buttons.html">Buttons</a></li>
+        <li><a href="cards.html">Cards</a></li>
+        <li><a href="navbars.html">Navbars</a></li>
+        <li>
+          <button id="dark-toggle">
+            <img id="dark-toggle-img" src="/assets/ic_dark.svg" />
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <h1>Card Components</h1>
+      <div class="component-grid">
+        <div class="component-box">
+          <h3 class="component-title">Default Card</h3>
+          <div class="preview">
+            <div class="card">
+              <h3 class="card-title">Place your title here</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+          </div>
+          <div class="copy-container">
+            <button class="copy-btn">Copy</button>
+          </div>
+        </div>
+
+        <div class="component-box">
+          <h3 class="component-title">Card with button</h3>
+          <div class="preview">
+            <div class="card">
+              <h3 class="card-title">Place your title here</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <button class="btn btn-primary">Read more</button>
+            </div>
+          </div>
+          <div class="copy-container">
+            <button class="copy-btn">Copy</button>
+          </div>
+        </div>
+
+        <div class="component-box">
+          <h3 class="component-title">Card with link</h3>
+          <div class="preview">
+            <div class="card">
+              <h3 class="card-title">Place your title here</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a class="btn btn-link">Read more</a>
+            </div>
+          </div>
+          <div class="copy-container">
+            <button class="copy-btn">Copy</button>
+          </div>
+        </div>
+
+        <div class="component-box">
+          <h3 class="component-title">Card with image</h3>
+          <div class="preview">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://media.istockphoto.com/id/1022892932/photo/hand-holding-light-bulb-against-nature-on-green-leaf-with-icons-energy-sources-for-renewable.jpg?s=612x612&w=0&k=20&c=Z8Zwgtv5o2-umMAnMn_5H-ZE62GMSUzf7zG-gHE_3UM="
+                alt="test-image"
+                loading="async"
+              />
+              <h3 class="card-title">Place your title here</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <button class="btn btn-primary">Read more</button>
+            </div>
+          </div>
+          <div class="copy-container">
+            <button class="copy-btn">Copy</button>
+          </div>
+        </div>
+
+        <div class="component-box">
+          <h3 class="component-title">Image selector card</h3>
+          <div class="preview">
+            <div class="card card-img-selector">
+              <h3 class="card-title">Select profile image</h3>
+              <button class="selector-button">
+                <img
+                  class="card-placeholder-img"
+                  src="https://static.vecteezy.com/system/resources/previews/010/011/935/non_2x/drag-and-drop-add-upload-photo-concept-illustration-flat-design-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-vector.jpg"
+                  alt="test-image"
+                  loading="async"
+                />
+              </button>
+
+              <button class="btn btn-primary">Upload</button>
+            </div>
+          </div>
+          <div class="copy-container">
+            <button class="copy-btn">Copy</button>
+          </div>
+        </div>
+
+        <div class="component-box">
+          <h3 class="component-title">Profile card</h3>
+          <div class="preview">
+            <div class="card card-profile">
+              <img
+                class="card-img-top"
+                src="https://l-ldesign.com.au/2016/wp-content/uploads/2020/01/profile-pic-katie-square.jpg"
+                alt="test-image"
+                loading="async"
+              />
+              <h3 class="card-title">Your name here</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <button class="btn btn-primary">Add to friend</button>
+            </div>
+          </div>
+          <div class="copy-container">
+            <button class="copy-btn">Copy</button>
+          </div>
+        </div>
+
+        <div class="component-box">
+          <h3 class="component-title">Small Profile card</h3>
+          <div class="preview">
+            <div class="card card-profile">
+              <img
+                class="card-img-top img-sm"
+                src="https://l-ldesign.com.au/2016/wp-content/uploads/2020/01/profile-pic-katie-square.jpg"
+                alt="test-image"
+                loading="async"
+              />
+              <h3 class="card-title">Your name here</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <button class="btn btn-primary">Add to friend</button>
+            </div>
+          </div>
+          <div class="copy-container">
+            <button class="copy-btn">Copy</button>
+          </div>
+        </div>
+
+        <div class="component-box">
+          <h3 class="component-title">Action card</h3>
+          <div class="preview">
+            <div class="card card-action">
+              <h3 class="card-title">Delete selected</h3>
+              <p class="card-text">
+                Are you sure to delete 110 images permanently?
+              </p>
+              <div class="card-action-button-container">
+                <button class="btn btn-primary">No</button>
+                <button class="btn btn-error">Yes</button>
+              </div>
+            </div>
+          </div>
+          <div class="copy-container">
+            <button class="copy-btn">Copy</button>
+          </div>
+        </div>
+
+        <div class="component-box">
+          <h3 class="component-title">Outline action card</h3>
+          <div class="preview">
+            <div class="card card-action">
+              <h3 class="card-title">Delete selected</h3>
+              <p class="card-text">
+                Are you sure to delete 110 images permanently?
+              </p>
+              <div class="card-action-button-container">
+                <button class="btn btn-outline-secondary">No</button>
+                <button class="btn btn-outline-primary">Yes</button>
+              </div>
+            </div>
+          </div>
+          <div class="copy-container">
+            <button class="copy-btn">Copy</button>
+          </div>
+        </div>
+
+        <div class="component-box">
+          <h3 class="component-title">Card with header</h3>
+          <div class="preview">
+            <div class="card">
+              <div class="card-header">Featured</div>
+              <h3 class="card-title">Place your title here</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+          </div>
+          <div class="copy-container">
+            <button class="copy-btn">Copy</button>
+          </div>
+        </div>
+
+        <div class="component-box">
+          <h3 class="component-title">Card with footer</h3>
+          <div class="preview">
+            <div class="card">
+              <h3 class="card-title">Place your title here</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <div class="card-footer">Footer</div>
+            </div>
+          </div>
+          <div class="copy-container">
+            <button class="copy-btn">Copy</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
