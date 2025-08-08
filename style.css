@@ -48,7 +48,7 @@ a:active {
 }
 
 main {
-  padding: 12px 4%;
+  padding: 10px 3%;
 }
 
 code {
@@ -60,7 +60,7 @@ h1 {
 }
 
 section {
-  padding: 10px 0px;
+  padding: 8px 0px;
 }
 
 h3 {
@@ -119,9 +119,10 @@ code {
 
 /* Grid layout */
 .component-grid {
-  gap: 1rem;
   display: grid;
-  grid-template-columns: repeat(1, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  row-gap: 1rem;
+  margin: auto;
 }
 
 .component-box {
@@ -132,7 +133,9 @@ code {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 360px;
+  width: 360px;
+  align-self: flex-start;
+  justify-self: center;
 }
 
 .preview {
@@ -388,15 +391,25 @@ button:active {
 
   .navbar {
     flex-direction: row;
-    padding: 12px 15%;
+    padding: 12px 4%;
   }
 }
 
 @media (min-width: 768px) {
-  .component-grid {
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  .navbar {
+    padding: 12px 6%;
   }
 
+  .navbar #home-link {
+    left: 6%;
+  }
+
+  main {
+    padding: 12px 6%;
+  }
+}
+
+@media (min-width: 1200px) {
   .navbar {
     padding: 12px 8%;
   }
@@ -407,24 +420,6 @@ button:active {
 
   main {
     padding: 12px 8%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .component-grid {
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-  }
-
-  .navbar {
-    padding: 12px 12%;
-  }
-
-  .navbar #home-link {
-    left: 12%;
-  }
-
-  main {
-    padding: 12px 12%;
   }
 }
 
