@@ -3,7 +3,17 @@
   --color-foreground: #000;
   --color-accent: #00c687;
   --color-box-bg: #eee;
-  --color-border: #ccc;
+  --color-border: rgba(99, 99, 99, 0.2);
+  --color-primary: #0073ef;
+  --color-secondary: #6d7983;
+  --color-disabled: #b7b7b7;
+  --color-success: #189259;
+  --color-error: #dc3142;
+  --color-warning: #f6ba06;
+  --color-info: #08c5eb;
+  --color-light: #f0f3f7;
+  --color-dark: #24272b;
+  --card-header: rgba(99, 99, 99, 0.8);
 }
 
 .dark-mode {
@@ -38,7 +48,7 @@ a:active {
 }
 
 main {
-  padding: 12px 5%;
+  padding: 12px 4%;
 }
 
 code {
@@ -165,68 +175,82 @@ button:active {
   letter-spacing: 1px;
 }
 
+.btn:disabled {
+  background-color: var(--color-disabled);
+  cursor: not-allowed;
+}
+
 .btn-primary {
-  background-color: #0073ef;
+  background-color: var(--color-primary);
   color: white;
 }
 
 .btn-secondary {
-  background-color: #6d7983;
+  background-color: var(--color-secondary);
   color: white;
 }
 
+.btn-rounded {
+  border-radius: 20px;
+  padding: 6px 32px;
+}
+
+.btn-animated:hover {
+  animation: bounce 0.4s linear;
+}
+
 .btn-success {
-  background-color: #189259;
+  background-color: var(--color-success);
   color: white;
 }
 
 .btn-error {
-  background-color: #dc3142;
+  background-color: var(--color-error);
   color: white;
 }
 
 .btn-warning {
-  background-color: #f6ba06;
+  background-color: var(--color-warning);
   color: black;
 }
 
 .btn-info {
-  background-color: #08c5eb;
+  background-color: var(--color-info);
   color: black;
 }
 
 .btn-light {
-  background-color: #f0f3f7;
+  background-color: var(--color-light);
   color: black;
 }
 
 .btn-dark {
-  background-color: #24272b;
+  background-color: var(--color-dark);
   color: white;
 }
 
 .btn-link {
-  color: #1371ff;
+  color: var(--color-primary);
   text-decoration: underline dashed 2px;
   text-underline-offset: 4px;
   background: none;
 }
 
 .btn-outline-primary {
-  border: 2px solid #0073ef;
-  color: #0073ef;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
   background: none;
 }
 
 .btn-outline-secondary {
-  border: 2px solid #6d7983;
-  color: #6d7983;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
   background: none;
 }
 
 .btn-outline-success {
-  border: 2px solid #189259;
-  color: #189259;
+  border: 2px solid var(--color-success);
+  color: var(--color-success);
   background: none;
 }
 
@@ -248,7 +272,7 @@ button:active {
 }
 
 .card {
-  border: 2px solid rgba(99, 99, 99, 0.3);
+  border: 2px solid var(--color-border);
   box-shadow: 2px 2px 5px rgba(35, 35, 35, 0.1);
   display: flex;
   flex-direction: column;
@@ -278,7 +302,7 @@ button:active {
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
-  border: 2px solid rgba(99, 99, 99, 0.3);
+  border: 2px solid var(--color-border);
 }
 
 .card-profile {
@@ -309,9 +333,9 @@ button:active {
   margin-right: -16px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background-color: rgba(99, 99, 99, 0.8);
+  background-color: var(--card-header);
   padding: 4px 16px;
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: 500;
   font-size: 14px;
   margin-bottom: 8px;
@@ -323,9 +347,9 @@ button:active {
   margin-right: -16px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  background-color: rgba(99, 99, 99, 0.8);
+  background-color: var(--card-header);
   padding: 4px 16px;
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: 500;
   font-size: 14px;
   margin-top: 8px;
@@ -374,15 +398,15 @@ button:active {
   }
 
   .navbar {
-    padding: 12px 10%;
+    padding: 12px 8%;
   }
 
   .navbar #home-link {
-    left: 10%;
+    left: 8%;
   }
 
   main {
-    padding: 12px 10%;
+    padding: 12px 8%;
   }
 }
 
@@ -392,14 +416,36 @@ button:active {
   }
 
   .navbar {
-    padding: 12px 15%;
+    padding: 12px 12%;
   }
 
   .navbar #home-link {
-    left: 15%;
+    left: 12%;
   }
 
   main {
-    padding: 12px 15%;
+    padding: 12px 12%;
+  }
+}
+
+/* Animations */
+@keyframes bounce {
+  0% {
+    transform: translateY(-1px);
+  }
+  20% {
+    transform: translateY(1px);
+  }
+  40% {
+    transform: translateY(-2px);
+  }
+  60% {
+    transform: translateY(2px);
+  }
+  80% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
