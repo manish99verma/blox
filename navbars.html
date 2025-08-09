@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blox - CSS Library</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Higlight js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -25,6 +32,166 @@
         </li>
       </ul>
     </nav>
+
+    <main class="container">
+      <h1>Navbar Components</h1>
+      <div class="component-grid nav-grid">
+        <!-- 1. Navbar with just title -->
+        <div class="component-box nav-component-box">
+          <h3 class="component-title">Navbar with just title</h3>
+          <div class="preview">
+            <nav class="nav">
+              <a class="nav-brand" href="#">Blox</a>
+            </nav>
+          </div>
+        </div>
+
+        <!-- 2. Navbar with title and icon -->
+        <div class="component-box nav-component-box">
+          <h3 class="component-title">Navbar with title and icon</h3>
+          <div class="preview">
+            <nav class="nav">
+              <a class="nav-brand" href="#">Blox</a>
+              <img
+                class="nav-icon"
+                src="/assets/ic_camera.png"
+                alt="light-mode-toggle"
+              />
+            </nav>
+          </div>
+        </div>
+
+        <!-- 3. Navbar with links -->
+        <div class="component-box nav-component-box">
+          <h3 class="component-title">Navbar with links</h3>
+          <div class="preview">
+            <nav class="nav">
+              <a class="nav-brand" href="#">Blox</a>
+              <button class="nav-toggler" aria-label="Toggle Menu">☰</button>
+              <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- 4. Navbar with search -->
+        <div class="component-box nav-component-box">
+          <h3 class="component-title">Navbar with search</h3>
+          <div class="preview">
+            <nav class="nav">
+              <a class="nav-brand" href="#">Blox</a>
+              <button class="nav-toggler" aria-label="Toggle Menu">☰</button>
+              <ul class="nav-links">
+                <li>
+                  <input
+                    type="search"
+                    class="nav-search"
+                    placeholder="Search..."
+                  />
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- 5. Navbar with button -->
+        <div class="component-box nav-component-box">
+          <h3 class="component-title">Navbar with button</h3>
+          <div class="preview">
+            <nav class="nav">
+              <a class="nav-brand" href="#">Blox</a>
+              <button class="nav-toggler" aria-label="Toggle Menu">☰</button>
+              <ul class="nav-links">
+                <li><button class="btn">Sign Up</button></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- 6. Sticky Navbar -->
+        <div class="component-box nav-component-box">
+          <h3 class="component-title">Sticky Navbar</h3>
+          <div class="preview">
+            <nav class="nav sticky">
+              <a class="nav-brand" href="#">Blox</a>
+              <button class="nav-toggler" aria-label="Toggle Menu">☰</button>
+              <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- 7. Fixed Navbar -->
+        <div class="component-box nav-component-box">
+          <h3 class="component-title">Fixed Navbar</h3>
+          <div class="preview">
+            <nav class="nav fixed">
+              <a class="nav-brand" href="#">Blox</a>
+              <button class="nav-toggler" aria-label="Toggle Menu">☰</button>
+              <ul class="nav-links">
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- 8. Navbar with logo image -->
+        <div class="component-box nav-component-box">
+          <h3 class="component-title">Navbar with logo image</h3>
+          <div class="preview">
+            <nav class="nav">
+              <img class="nav-icon" src="/assets/ic_camera.png" alt="logo" />
+              <button class="nav-toggler" aria-label="Toggle Menu">☰</button>
+              <ul class="nav-links">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Cart</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- 9. Centered Navbar -->
+        <div class="component-box nav-component-box">
+          <h3 class="component-title">Centered Navbar</h3>
+          <div class="preview">
+            <nav class="nav nav-center">
+              <button class="nav-toggler" aria-label="Toggle Menu">☰</button>
+              <ul class="nav-links">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Reviews</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- 10. Navbar with dropdown -->
+        <div class="component-box nav-component-box">
+          <h3 class="component-title">Centered Navbar With Search</h3>
+          <div class="preview">
+            <nav class="nav nav-centerd-search">
+              <a class="nav-brand" href="#">Blox</a>
+
+              <button class="nav-toggler" aria-label="Toggle Menu">☰</button>
+              <ul class="nav-links">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Reviews</a></li>
+              </ul>
+
+              <input type="search" class="nav-search" placeholder="Search..." />
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script src="script.js" defer></script>
   </body>
 </html>

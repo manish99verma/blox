@@ -56,3 +56,9 @@ function initializeMenuButton() {
     }
   });
 }
+
+document.querySelectorAll(".nav-toggler").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    btn.nextElementSibling.classList.toggle("show");
+  });
+});

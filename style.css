@@ -14,6 +14,7 @@
   --color-light: #f0f3f7;
   --color-dark: #24272b;
   --card-header: rgba(99, 99, 99, 0.8);
+  --color-shadow: rgba(35, 35, 35, 0.1);
 }
 
 .dark-mode {
@@ -377,8 +378,63 @@ button:active {
   object-position: center;
 }
 
+/* Navbars */
+.nav-grid {
+  grid-template-columns: 1fr;
+}
+
+.nav-component-box {
+  width: 100%;
+}
+
+/* Base Navbar */
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  padding: 10px 15px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav-brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-toggler {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-foreground);
+}
+
+.nav .nav-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.nav-center {
+  justify-content: center;
+}
+
 /* Media Queries */
-@media (min-width: 576px) {
+@media (min-width: 577px) {
   .navbar .menu-items {
     display: flex;
     flex-direction: row;
@@ -395,7 +451,7 @@ button:active {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar {
     padding: 12px 6%;
   }
@@ -409,7 +465,7 @@ button:active {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .navbar {
     padding: 12px 8%;
   }
@@ -420,6 +476,44 @@ button:active {
 
   main {
     padding: 12px 8%;
+  }
+}
+
+/* Navbar Mobile */
+@media (max-width: 768px) {
+  .nav-toggler {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a,
+  .dropbtn {
+    display: block;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    text-align: left;
+  }
+}
+
+/* Navbar Desktop always shows */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex !important;
   }
 }
 
