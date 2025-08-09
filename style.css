@@ -286,6 +286,7 @@ button:active {
   color: var(--color-foreground);
   gap: 8px;
   width: 100%;
+  max-width: 360px;
 }
 
 .card .card-title {
@@ -397,6 +398,7 @@ button:active {
   color: var(--color-foreground);
   padding: 10px 15px;
   flex-wrap: wrap;
+  box-shadow: 2px 2px 5px var(--color-shadow);
 }
 
 .nav a {
@@ -427,6 +429,16 @@ button:active {
   width: 24px;
   height: 24px;
   cursor: pointer;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
 }
 
 .nav-center {
