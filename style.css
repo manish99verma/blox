@@ -194,17 +194,6 @@ p {
   justify-content: end;
 }
 
-.component-box .copy-btn {
-  border: 2px solid var(--color-accent);
-  color: var(--color-accent);
-  background: none;
-  border-radius: 8px;
-  font-size: medium;
-  font-weight: 500;
-  padding: 2px 6px;
-  cursor: pointer;
-}
-
 /* Button styles */
 button {
   transition: all 0.2s ease-in-out;
