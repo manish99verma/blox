@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   initializeCopyButtons();
-  initializeToggleButton();
+  initializeDarkToggleButton();
   initializeMenuButton();
+  initializeNavToggler();
+
+  // Add highlight colors in code preview
   hljs.highlightAll();
 });
 
@@ -31,7 +34,15 @@ async function copyCode(btn) {
 }
 
 // Dark mode toggle
-function initializeToggleButton() {
+function initializeDarkToggleButton() {
+  const img = document.getElementById("dark-toggle-img");
+
+  console.log("theme: ", sessionStorage.getItem("theme"));
+  if (sessionStorage.getItem("theme") === "dark") {
+    document.body.classList.toggle("dark-mode");
+    img.setAttribute("src", "/assets/ic_light.svg");
+  }
+
   document.getElementById("dark-toggle").addEventListener("click", () => {
     const img = document.getElementById("dark-toggle-img");
     document.body.classList.toggle("dark-mode");
@@ -39,13 +50,15 @@ function initializeToggleButton() {
 
     if (isDarkMode) {
       img.setAttribute("src", "/assets/ic_light.svg");
+      sessionStorage.setItem("theme", "dark");
     } else {
       img.setAttribute("src", "/assets/ic_dark.svg");
+      sessionStorage.setItem("theme", "light");
     }
   });
 }
 
-// Navigation Menu button
+// InApp - Navbar toggler
 function initializeMenuButton() {
   document.getElementById("menu-button").addEventListener("click", (e) => {
     const menuItems = document.querySelector(".menu-items");
@@ -57,8 +70,11 @@ function initializeMenuButton() {
   });
 }
 
-document.querySelectorAll(".nav-toggler").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    btn.nextElementSibling.classList.toggle("show");
+// Component - Navbar toggler
+function initializeNavToggler() {
+  document.querySelectorAll(".nav-toggler").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.nextElementSibling.classList.toggle("show");
+    });
   });
-});
+}
