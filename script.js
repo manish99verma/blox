@@ -78,3 +78,6 @@ function initializeNavToggler() {
     });
   });
 }
+
+// https://cdn.jsdelivr.net/gh/manish99verma/blox@main/style.css
+// https://cdn.jsdelivr.net/gh/manish99verma/blox@main/script.js

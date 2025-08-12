@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --color-background: #fff;
   --color-foreground: #000;
@@ -31,7 +33,7 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--color-background);
   color: var(--color-foreground);
 }
@@ -63,13 +65,29 @@ section {
   padding: 8px 0px;
 }
 
-h3 {
-  padding: 0;
+h3,
+h4 {
+  padding: 4px 0px;
   margin: 0;
 }
 
 code {
   border-radius: 8px;
+}
+
+hr {
+  border-color: var(--color-border);
+  margin: 1rem;
+}
+
+ul > li {
+  padding-top: 2px;
+  padding-bottom: 4px;
+}
+
+p {
+  padding: 6px 0px;
+  margin: 0;
 }
 
 .navbar {
@@ -115,6 +133,34 @@ code {
   padding: 2px;
   background: none;
   color: var(--color-foreground);
+}
+
+.cdn-link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.cdn-link pre {
+  flex: 1;
+  width: 100%;
+}
+
+.list-getting-started {
+  list-style: none;
+}
+
+.list-getting-started > li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.component-page-link {
+  color: var(--color-primary);
+  font: medium;
+  font-size: large;
 }
 
 /* Grid layout */
@@ -487,6 +533,10 @@ button:active {
 
   main {
     padding: 12px 8%;
+  }
+
+  .cdn-link {
+    flex-direction: row;
   }
 }
 
