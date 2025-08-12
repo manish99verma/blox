@@ -169,6 +169,7 @@ p {
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   row-gap: 1rem;
   margin: auto;
+  margin-top: 24px;
 }
 
 .component-box {
@@ -269,7 +270,6 @@ button:active {
 
 .btn-link {
   color: var(--color-primary);
-  text-decoration: underline dashed 2px;
   text-underline-offset: 4px;
   background: none;
 }
@@ -416,6 +416,7 @@ button:active {
 /* Navbars */
 .nav-grid {
   grid-template-columns: 1fr;
+  margin-top: 24px;
 }
 
 .nav-component-box {
