@@ -43,7 +43,7 @@ function initializeDarkToggleButton() {
     img.setAttribute("src", "./assets/ic_light.svg");
   }
 
-  document.getElementById("dark-toggle").addEventListener("click", () => {
+  document.getElementById("dark-toggle")?.addEventListener("click", () => {
     const img = document.getElementById("dark-toggle-img");
     document.body.classList.toggle("dark-mode");
     const isDarkMode = document.body.classList.contains("dark-mode");
@@ -60,7 +60,7 @@ function initializeDarkToggleButton() {
 
 // InApp - Navbar toggler
 function initializeMenuButton() {
-  document.getElementById("menu-button").addEventListener("click", (e) => {
+  document.getElementById("menu-button")?.addEventListener("click", (e) => {
     const menuItems = document.querySelector(".menu-items");
     if (menuItems.style.display === "flex") {
       menuItems.style = "none";
