@@ -1,4 +1,4 @@
-# Blox — CSS Component Library [live demo➡️](https://manish99verma.github.io/blox/)
+# Blox — CSS Component Library [visit➡️](https://manish99verma.github.io/blox/)
 
 ## Overview
 

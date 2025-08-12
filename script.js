@@ -40,7 +40,7 @@ function initializeDarkToggleButton() {
   console.log("theme: ", sessionStorage.getItem("theme"));
   if (sessionStorage.getItem("theme") === "dark") {
     document.body.classList.toggle("dark-mode");
-    img.setAttribute("src", "/assets/ic_light.svg");
+    img.setAttribute("src", "./assets/ic_light.svg");
   }
 
   document.getElementById("dark-toggle").addEventListener("click", () => {
@@ -49,10 +49,10 @@ function initializeDarkToggleButton() {
     const isDarkMode = document.body.classList.contains("dark-mode");
 
     if (isDarkMode) {
-      img.setAttribute("src", "/assets/ic_light.svg");
+      img.setAttribute("src", "./assets/ic_light.svg");
       sessionStorage.setItem("theme", "dark");
     } else {
-      img.setAttribute("src", "/assets/ic_dark.svg");
+      img.setAttribute("src", "./assets/ic_dark.svg");
       sessionStorage.setItem("theme", "light");
     }
   });
