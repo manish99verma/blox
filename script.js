@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeNavToggler();
 
   // Add highlight colors in code preview
-  hljs.highlightAll();
+  hljs?.highlightAll();
 });
 
 // Add click listener to copy buttons
@@ -37,7 +37,6 @@ async function copyCode(btn) {
 function initializeDarkToggleButton() {
   const img = document.getElementById("dark-toggle-img");
 
-  console.log("theme: ", sessionStorage.getItem("theme"));
   if (sessionStorage.getItem("theme") === "dark") {
     document.body.classList.toggle("dark-mode");
     img?.setAttribute("src", "./assets/ic_light.svg");
@@ -79,5 +78,6 @@ function initializeNavToggler() {
   });
 }
 
+// CDN links
 // https://cdn.jsdelivr.net/gh/manish99verma/blox@main/style.css
 // https://cdn.jsdelivr.net/gh/manish99verma/blox@main/script.js
