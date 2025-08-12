@@ -1,4 +1,4 @@
-# Blox — CSS Component Library
+# [Blox — CSS Component Library](https://google.com)
 
 ## Overview
 
@@ -24,6 +24,8 @@ Javascript
 <script src="https://cdn.jsdelivr.net/gh/manish99verma/blox@main/script.js"></script>
 ```
 
+---
+
 ### 2. Components
 
 Blox comes with three types of UI components:
@@ -31,6 +33,8 @@ Blox comes with three types of UI components:
 - Buttons — Multiple styles like primary, outline, ghost, rounded, icon buttons, and more.
 - Cards — Variations including image cards, profile cards, product cards, hover effects, and more.
 - Navbars — Responsive navigation bars with fixed, sticky, centered, and icon-based layouts.
+
+---
 
 ### 3. How to Use
 
@@ -41,17 +45,23 @@ Blox comes with three types of UI components:
   - Copy Button — Instantly copy code to your clipboard.
 - All components are responsive by default.
 
+---
+
 ### 4. Customization
 
 - Change colors, spacing, and typography using CSS variables in :root.
 - Supports light and dark themes — toggle dark mode to see changes instantly.
 - Override any class in your own stylesheet for custom styles.
 
+---
+
 ### 5. Example
 
 ```
 <button class="btn btn-primary">Primary Button</button>
 ```
+
+---
 
 ### 6. License
 
