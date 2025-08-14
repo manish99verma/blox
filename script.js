@@ -1,12 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
+  enableCodeHighlight();
   initializeCopyButtons();
   initializeDarkToggleButton();
   initializeMenuButton();
   initializeNavToggler();
-
-  // Add highlight colors in code preview
-  hljs?.highlightAll();
 });
+
+// Add highlight colors in code preview
+function enableCodeHighlight() {
+  try {
+    hljs?.highlightAll();
+  } catch (err) {
+    console.log("Code highlight is not loaded");
+  }
+}
 
 // Add click listener to copy buttons
 function initializeCopyButtons() {
@@ -77,7 +84,3 @@ function initializeNavToggler() {
     });
   });
 }
-
-// CDN links
-// https://cdn.jsdelivr.net/gh/manish99verma/blox@main/style.css
-// https://cdn.jsdelivr.net/gh/manish99verma/blox@main/script.js
